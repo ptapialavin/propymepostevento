@@ -180,3 +180,79 @@ body {
 .social-links a:hover {
   color: var(--color-secondary);
 }
+
+/* ==========================================================================
+   MEDIA QUERY Y ANIMACIONES
+   ========================================================================== */
+@media screen and (min-width: 576px) {
+  
+  .grid-container {
+    grid-template-areas:
+      "header main"
+      "footer footer";
+    grid-template-columns: 240px 1fr;
+  }
+
+ 
+  .main-header {
+    grid-area: header;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+    padding: 2.5rem 1rem;
+  }
+
+ 
+  .hamburger-menu {
+    display: none;
+  }
+
+
+  .sidebar-nav {
+    display: block;
+    width: 100%;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+  }
+
+  .menu-list a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: var(--transition-smooth);
+  }
+
+  .menu-list a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+
+  .gallery-item {
+    flex: 1 1 calc(25% - 15px);
+    height: 180px;
+  }
+
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .social-links {
+    justify-content: flex-end;
+  }
+}
