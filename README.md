@@ -1,4 +1,5 @@
 # propymepostevento
+Link del proyecto: https://ptapialavin.github.io/propymepostevento/ 
 
 📌 PROPYME Landing Page – Workshop 2026
 Proyecto desarrollado como parte del módulo CSS Avanzado del curso Desafío Latam – Desarrollo Full Stack JavaScript, correspondiente a la prueba final del módulo.
